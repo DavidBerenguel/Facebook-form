@@ -28,7 +28,7 @@
                     <fieldset>
                         <legend>Data de nascimento</legend>
                         <select name="birth-day" aria-label="Dia"></select>
-                        <select name="birth-month" arai-label="Mês">
+                        <select name="birth-month" aria-label="Mês">
                             <option value="1">Jan</option>
                             <option value="2">Fev</option>
                             <option value="3">Mar</option>
@@ -61,17 +61,19 @@
                             <input type="radio" name="gender" value="P" required>
                         </label>
                     </fieldset>
-                    <div>
-                        <select name="pronoun" aria-label="Pronome">
-                            <option value="" disable selected>Seleciona o teu nome</option>
-                            <option value="1">Ela</option>
-                            <option value="2">Ele</option>
-                            <option value="6">Neutro</option>
-                        </select>                  
-                    </div>
-                    <p>O teu pronome é visível para todas as pessoas.</p>
-                    <div class="large-input">
-                        <input type="text" name="costume_gender" placeholder="Género (opcional)" aria-label="Género Personalizado">
+                    <div id="gender-addon" class="hide">
+                        <div>
+                            <select name="pronoun" aria-label="Pronome">
+                                <option value="" disable selected>Seleciona o teu nome</option>
+                                <option value="1">Ela</option>
+                                <option value="2">Ele</option>
+                                <option value="6">Neutro</option>
+                            </select>                  
+                        </div>
+                        <p>O teu pronome é visível para todas as pessoas.</p>
+                        <div class="large-input">
+                            <input type="text" name="costume_gender" placeholder="Género (opcional)" aria-label="Género Personalizado">
+                        </div>
                     </div>
                 </div>
                 <div class="form-submit">
